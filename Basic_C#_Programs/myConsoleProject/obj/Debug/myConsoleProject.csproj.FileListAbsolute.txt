@@ -1,0 +1,7 @@
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\myConsoleProject\bin\Debug\myConsoleProject.exe.config
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\myConsoleProject\bin\Debug\myConsoleProject.exe
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\myConsoleProject\bin\Debug\myConsoleProject.pdb
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\myConsoleProject\obj\Debug\myConsoleProject.csproj.AssemblyReference.cache
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\myConsoleProject\obj\Debug\myConsoleProject.csproj.CoreCompileInputs.cache
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\myConsoleProject\obj\Debug\myConsoleProject.exe
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\myConsoleProject\obj\Debug\myConsoleProject.pdb
