@@ -1,0 +1,16 @@
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.csproj.AssemblyReference.cache
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.AssemblyInfoInputs.cache
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.AssemblyInfo.cs
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.csproj.CoreCompileInputs.cache
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\bin\Debug\net5.0\VariablesAndDataTypes.exe
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\bin\Debug\net5.0\VariablesAndDataTypes.deps.json
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\bin\Debug\net5.0\VariablesAndDataTypes.runtimeconfig.json
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\bin\Debug\net5.0\VariablesAndDataTypes.runtimeconfig.dev.json
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\bin\Debug\net5.0\VariablesAndDataTypes.dll
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\bin\Debug\net5.0\ref\VariablesAndDataTypes.dll
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\bin\Debug\net5.0\VariablesAndDataTypes.pdb
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.dll
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\ref\VariablesAndDataTypes.dll
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.pdb
+C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\VariablesAndDataTypes\obj\Debug\net5.0\VariablesAndDataTypes.genruntimeconfig.cache
