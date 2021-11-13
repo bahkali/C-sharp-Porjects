@@ -39,7 +39,7 @@ namespace MathAndComparisonOperations
             Console.WriteLine("Annual Salary of Person 2: " + AnnualSalary2);
 
             // Compare their annual salary
-            Console.WriteLine("Does Persone 1 make more money than Person 2? "+ (AnnualSalary1 > AnnualSalary1));
+            Console.WriteLine("Does Persone 1 make more money than Person 2? "+ (AnnualSalary1 > AnnualSalary2));
 
             Console.Read();
 
