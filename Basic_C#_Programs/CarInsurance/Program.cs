@@ -26,7 +26,7 @@ namespace CarInsurance
 
             // Determine if qualified and display the result
             Console.WriteLine("Qualified? ");
-            Console.WriteLine(age > 15 && (dui == false) && speedingTickets < 3);
+            Console.WriteLine(age > 15 && (dui == false) && speedingTickets <= 3);
 
             // Before Terminate Program.
             Console.WriteLine("Press any key to terminate.");
