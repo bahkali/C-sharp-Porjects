@@ -15,7 +15,14 @@ namespace ShippingQuote
             // Get package weight
             Console.Write("Please enter the package weight: ");
             int packageWeight = Convert.ToInt32(Console.ReadLine());
-
+            // Check Weight if too heavy
+            if (packageWeight > 50)
+            {
+                Console.WriteLine("Package too heavy to be shipped via Package Express. Have a good day.");
+                Console.ReadKey();
+                //Environment.Exit(0);
+                return;
+            }
             // Get package width
             Console.Write("Please enter the package width: ");
             int packageWidth = Convert.ToInt32(Console.ReadLine());
@@ -30,6 +37,7 @@ namespace ShippingQuote
             // Calculate total Dimension and Quote
             int packageDimensions = packageWidth + packageheight + packagelength;
             int Quote = (packageheight * packageWidth * packagelength) * packageWeight / 100;
+            
             if (packageDimensions <= 50)
             {
                 Console.WriteLine($"Your estimated total for shipping this package is: ${Quote}\nThank you!");
