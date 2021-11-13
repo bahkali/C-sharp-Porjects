@@ -28,9 +28,9 @@ namespace ShippingQuote
             Console.Write("Please enter the package length: ");
             int packagelength = Convert.ToInt32(Console.ReadLine());
             // Calculate total Dimension and Quote
-            int packageDimensions = packageWeight + packageWidth + packageheight + packagelength;
+            int packageDimensions = packageWidth + packageheight + packagelength;
             int Quote = (packageheight * packageWidth * packagelength) * packageWeight / 100;
-            if (packageDimensions <= 500)
+            if (packageDimensions <= 50)
             {
                 Console.WriteLine($"Your estimated total for shipping this package is: ${Quote}\nThank you!");
             } else
