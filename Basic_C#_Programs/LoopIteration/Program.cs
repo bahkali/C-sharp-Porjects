@@ -100,6 +100,7 @@ namespace LoopIteration
             Console.Write("Enter a text to search in the array \nHint: Type of vehicle: ");
             string str3 = Console.ReadLine();
             List<int> indices = new List<int>();
+            // loop to find duplicate and add it to indices list.
             for (int i = 0; i < duplicatetring.Count; i++)
             {
                 if (duplicatetring[i] == str3)
@@ -108,6 +109,7 @@ namespace LoopIteration
                 }
                 
             }
+            // check if indices is empty
             if(indices.Capacity == 0)
             {
                 Console.WriteLine($"Sorry the word {str3} isn't in the array");
@@ -116,7 +118,20 @@ namespace LoopIteration
                 Console.WriteLine("the indices are : ");
                 foreach(int i in indices) { Console.WriteLine(i); }
             }
-            
+
+            // Part Six
+            List<string> itemList = new List<string>() { "car", "plane", "car", "bicycle" };
+            foreach (string s in itemList)
+            {
+                if (itemList.Any(t => t == s)) {
+                    Console.WriteLine($"items {s} has a duplicate");
+                }
+                else
+                {
+                    Console.WriteLine($"items {s} doesn't have a duplicate.");
+                }
+            }
+
             // Before termination
             Console.WriteLine("Press any key to terminate the program.");
             Console.ReadKey();
