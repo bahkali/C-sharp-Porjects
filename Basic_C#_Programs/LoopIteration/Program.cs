@@ -72,7 +72,25 @@ namespace LoopIteration
                 
             } while (attemp <= 3);
 
-            //
+            // Part Four 
+
+            List<string> uniqueString = new List<string>() { "car", "plane", "bicycle" };
+            Console.Write("Enter a text to search in the array \nHint: Type of vehicle: ");
+            string str2 = Console.ReadLine();
+
+            for(int i = 0; i < uniqueString.Count; i++)
+            {
+                if (uniqueString.Contains(str2)) { 
+                    Console.WriteLine($"The index {i} contains the matching text {str2}");
+                    break;
+                }
+                else { 
+                    Console.WriteLine($"Sorry the word {str2} isn't in the array");
+                    break;
+                }
+            }
+
+
             // Before termination
             Console.WriteLine("Press any key to terminate the program.");
             Console.ReadKey();
