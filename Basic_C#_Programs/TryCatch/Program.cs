@@ -11,7 +11,7 @@ namespace TryCatch
         static void Main(string[] args)
         {
             // initialize array
-            int[] numbers = { 25, 789, 2910, 89, 104, 58394 };
+            List<int> numbers = new List<int>(){ 25, 789, 2910, 89, 104, 58394 };
 
             try
             {
@@ -29,7 +29,7 @@ namespace TryCatch
             {
                 Console.WriteLine(e.Message);
             }
-
+            Console.WriteLine("This progrom is wrapt in the try/catch block.");
 
             Console.ReadKey();
         }
