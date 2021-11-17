@@ -18,24 +18,15 @@ namespace MathOperation
             return Convert.ToInt32(num1) + 2;
         }
 
-        public int subtraction (int num1) 
+        public int addition(double num1)
         {
-            return num1 - 2;
-        }
-        public int division(int num1)
-        {
-            return num1 / 2;
+            return Convert.ToInt32(num1 + 2);
         }
 
-        public int division (double num1)
-        { 
-            return Convert.ToInt32(num1 / 2);
-        }
-
-        public int multiplicaiton(int num1)
-        {
-            return num1 * 2;
-        }
+        //public int subtraction (int num1) {return num1 - 2;}
+        //public int division(int num1){ return num1 / 2;}
+        //public int division (double num1){ return Convert.ToInt32(num1 / 2);}
+        //public int multiplicaiton(int num1){return num1 * 2;}
     }
 
 }
