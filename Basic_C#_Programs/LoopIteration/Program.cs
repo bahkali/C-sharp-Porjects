@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -80,7 +81,7 @@ namespace LoopIteration
 
             for(int i = 0; i < uniqueString.Count; i++)
             {
-                if (uniqueString.Contains(str2)) { 
+                if (uniqueString[i] == str2) { 
                     Console.WriteLine($"The index {i} contains the matching text {str2}");
                     break;
                 }
@@ -90,7 +91,32 @@ namespace LoopIteration
                 }
             }
 
+            Console.WriteLine();
+            Console.WriteLine();
 
+            // Part Five
+
+            List<string> duplicatetring = new List<string>() { "car", "plane", "car", "bicycle" };
+            Console.Write("Enter a text to search in the array \nHint: Type of vehicle: ");
+            string str3 = Console.ReadLine();
+            List<int> indices = new List<int>();
+            for (int i = 0; i < duplicatetring.Count; i++)
+            {
+                if (duplicatetring[i] == str3)
+                {
+                    indices.Add(i);
+                }
+                
+            }
+            if(indices.Capacity == 0)
+            {
+                Console.WriteLine($"Sorry the word {str3} isn't in the array");
+            }else
+            {
+                Console.WriteLine("the indices are : ");
+                foreach(int i in indices) { Console.WriteLine(i); }
+            }
+            
             // Before termination
             Console.WriteLine("Press any key to terminate the program.");
             Console.ReadKey();
