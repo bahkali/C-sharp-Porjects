@@ -26,21 +26,21 @@ namespace LoopIteration
             }
 
             //Part Two Infinite Loop
-            
+
+            int num = 0;
             while (true)
             {
-
                 // Fix the infinite loop
+                if(num == 10) { break; }
+                Console.Write(num + " ");
+                num++;
+                
             }
+            Console.WriteLine();
 
             //Part Tree - Loop with condition
-            for ()
-            {
-                // < operator
-            }
-            do {
-                // <= operator
-            } while ();
+            //for (){ }
+            //do {} while ();
 
             //
             // Before termination
