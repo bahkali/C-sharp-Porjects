@@ -18,7 +18,7 @@ namespace MathOperation
             return Convert.ToInt32(num1) + 2;
         }
 
-        public int addition(double num1)
+        public int addition(decimal num1)
         {
             return Convert.ToInt32(num1 + 2);
         }
