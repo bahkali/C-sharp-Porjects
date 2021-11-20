@@ -31,5 +31,28 @@ namespace TwentyOne
             
         }
         public List<Card> Cards { get; set; }
+
+      
+        public void Shuffle( int times = 1)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                Random random = new Random();
+                List<Card> TempList = new List<Card>();
+
+                while (Cards.Count > 0)
+                {
+                    // get a random number in deck range
+                    int randomIndex = random.Next(0, Cards.Count);
+                    // the card at that index to the temp list
+                    TempList.Add(Cards[randomIndex]);
+                    // Remove the card from the deck
+                    Cards.RemoveAt(randomIndex);
+                }
+                // Transfer all the shuffle card to the empty deck card  than return it
+                Cards = TempList;
+            }
+           
+        }
     }
 }
