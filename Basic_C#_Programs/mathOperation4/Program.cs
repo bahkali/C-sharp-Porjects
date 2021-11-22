@@ -10,11 +10,11 @@ namespace mathOperation4
     {
         static void Main(string[] args)
         {
-            basicMath myClass = new basicMath();
+            //basicMath myClass = new basicMath();
             Console.Write("Please enter a number: ");
             
-                int num = Convert.ToInt32(Console.ReadLine());
-                myClass.divideByTwo(num);
+            int num = Convert.ToInt32(Console.ReadLine());
+            basicMath.divideByTwo(num);
             
             
             // End Program
