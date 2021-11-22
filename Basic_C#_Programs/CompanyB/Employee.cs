@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace CompanyB
 {
-    class Employee : Person
+    class Employee : Person, IQuittable
     {
+        public void Quit()
+        {
+            Console.WriteLine("I quit.");
+        }
+
         // Implement the method 
         public override void SayName()
         {

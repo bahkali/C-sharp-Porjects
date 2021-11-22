@@ -18,6 +18,10 @@ namespace CompanyB
             //Call the method to display full name
             emp.SayName();
 
+            //Using Interface implemented
+            IQuittable emp1 = new Employee();
+            emp1.Quit();
+
             // End Program
             Console.ReadKey();
         }
