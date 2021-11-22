@@ -25,6 +25,7 @@ namespace Enums
             }
             catch
             {
+                
                 Console.WriteLine("Please enter an actual day of the week.");
             }
 
