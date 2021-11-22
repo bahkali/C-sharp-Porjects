@@ -12,7 +12,7 @@ namespace CompanyB
         {
             // Instantiate an employee
             Employee emp = new Employee();
-            
+            emp.Id = 24;
             emp.firstName = "Sample";
             emp.lastName = "Student";
             //Call the method to display full name
@@ -21,6 +21,12 @@ namespace CompanyB
             //Using Interface implemented
             IQuittable emp1 = new Employee();
             emp1.Quit();
+
+            //Operators
+            Employee emp2 = new Employee();
+            emp2.Id = 24;
+
+            Console.WriteLine(emp == emp2);
 
             // End Program
             Console.ReadKey();
