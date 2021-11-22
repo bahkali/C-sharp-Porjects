@@ -16,16 +16,16 @@ namespace Enums
                 // Get the user input
                 string day = Console.ReadLine();
 
-                DayOfWeek newDay;
-                // Convert the input into Enum
-                bool checkDay = Enum.TryParse(day, out newDay);
+                //DayOfWeek newDay;
+                //Convert the input into Enum
+                //bool checkDay = Enum.TryParse(day, out newDay);
                 // Output day entered
-                Console.WriteLine(day.ToString());
+                Console.WriteLine(Enum.Parse(typeof(DayOfWeek), day));
                 
             }
-            catch
+            catch(Exception e)
             {
-                
+                //Console.WriteLine(e.Message);
                 Console.WriteLine("Please enter an actual day of the week.");
             }
 
