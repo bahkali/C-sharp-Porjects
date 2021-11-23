@@ -8,6 +8,8 @@ namespace LambdaProject
 {
     class Program
     {
+        
+
         struct Employee
         {
             public int Id;
@@ -44,6 +46,11 @@ namespace LambdaProject
             // List 3
             List<Employee> EmployeeList3 = new List<Employee>(EmployeeList2.Where(x => x.Id > 5));
             PrintList(EmployeeList3);
+
+            // List 4
+            List<Employee> EmployeeList4 = new List<Employee>(EmployeeList.ConvertAll(e => new Employee() { Id = e.Id, firstName = "Joe", lastName = e.lastName }));
+            PrintList(EmployeeList4);
+
             Console.ReadKey();
         }
 
