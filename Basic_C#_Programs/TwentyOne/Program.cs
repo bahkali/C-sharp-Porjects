@@ -84,7 +84,26 @@ namespace TwentyOne
                 player.isActivelyPlaying = true;
                 while (player.isActivelyPlaying && player.Balance > 0)
                 {
-                    game.Play();
+                    try
+                    {
+                        game.Play();
+                    }
+                    catch (FraudException)
+                    {
+                        Console.WriteLine("Security! Kick this person out.");
+                        Console.Read();
+                        return;
+                    }
+
+                    catch (Exception)
+                    {
+
+                        Console.WriteLine("An error occurred. Please contact your system administrator.");
+                        Console.Read();
+                        return;
+                    }
+                    
+
                 }
                 game -= player;
                 Console.WriteLine("Thank you for playing!");
