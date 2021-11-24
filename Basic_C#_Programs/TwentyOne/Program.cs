@@ -45,6 +45,8 @@ namespace TwentyOne
 
             Console.WriteLine(logo);
 
+            DateTime dateTime = new DateTime();
+
             //string File_path = @"C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Logs";
             //File.ReadAllText(File_path);
 
