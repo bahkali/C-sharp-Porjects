@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,9 @@ namespace TwentyOne
 ";
 
             Console.WriteLine(logo);
+
+            string File_path = @"C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Logs";
+            File.ReadAllText(File_path);
 
             Console.WriteLine("Welcome to the Grand Hotel and Casino.\nLet's start by telling me your name.");
             string playerName = Console.ReadLine();

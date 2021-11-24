@@ -39,17 +39,22 @@ namespace LambdaProject
             List<Employee> EmployeeList2 = new List<Employee>();
             foreach (var e in EmployeeList)
             {
-                EmployeeList2.Add(new Employee() { Id = e.Id, firstName = "Joe", lastName = e.lastName });
+                if (e.firstName == "Joe")
+                {
+                    EmployeeList2.Add(new Employee() { Id = e.Id, firstName = e.firstName, lastName = e.lastName });
+                }
             }
             PrintList(EmployeeList2);
 
             // List 3
-            List<Employee> EmployeeList3 = new List<Employee>(EmployeeList2.Where(x => x.Id > 5));
+            List<Employee> EmployeeList3 = new List<Employee>(EmployeeList.FindAll(x => x.firstName == "Joe").ConvertAll(e => new Employee() { Id = e.Id, firstName = e.firstName, lastName = e.lastName }));
             PrintList(EmployeeList3);
 
-            // List 4
-            List<Employee> EmployeeList4 = new List<Employee>(EmployeeList.ConvertAll(e => new Employee() { Id = e.Id, firstName = "Joe", lastName = e.lastName }));
+            // List 3
+            List<Employee> EmployeeList4 = new List<Employee>(EmployeeList.Where(x => x.Id > 5));
             PrintList(EmployeeList4);
+
+            
 
             Console.ReadKey();
         }
