@@ -49,7 +49,7 @@ namespace TwentyOne
 
             DateTime dateTime = new DateTime();
 
-            //string File_path = @"C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Logs";
+            string file_path = @"c:\users\precisionm4800\desktop\c-sharp-projects-techacademy\logs\log.txt";
             //File.ReadAllText(File_path);
 
             Console.WriteLine("Welcome to the Grand Hotel and Casino.\nLet's start by telling me your name.");
@@ -64,6 +64,12 @@ namespace TwentyOne
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
                 Player player = new Player(playerName, bank);
+                player.Id = Guid.NewGuid();
+                
+                using (StreamWriter file = new StreamWriter(file_path, true))
+                {
+                    file.WriteLine(player.Id);
+                }
                 Game game = new TwentyOneGame();
                 game += player;
                 player.isActivelyPlaying = true;
