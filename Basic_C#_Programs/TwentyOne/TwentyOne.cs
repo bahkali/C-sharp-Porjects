@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    public class TwentyOne :  Game
+    public class TwentyOne :  Game, IWalkAway
     {
        
         public TwentyOneDealer Dealer { get; set; }
@@ -180,6 +180,11 @@ namespace TwentyOne
         {
             Console.WriteLine("21 Players: ");
             base.ListPlayer();
+        }
+
+        public void WalkAway(Player player)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -20,11 +20,11 @@ namespace TwentyOne
             string card = string.Format(Deck.Cards.First().ToString() + "\n");
             Console.WriteLine(card);
             // Append text to file
-            string file_path = @"C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Logs";
-            using (StreamWriter file = new StreamWriter(file_path, true)) 
-            {
-                file.WriteLine(card);
-            }
+            //string file_path = @"C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Logs";
+            //using (StreamWriter file = new StreamWriter(file_path, true)) 
+            //{
+            //    file.WriteLine(card);
+            //}
 
             Deck.Cards.RemoveAt(0);
         }
