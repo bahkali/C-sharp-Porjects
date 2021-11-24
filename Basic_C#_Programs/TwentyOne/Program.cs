@@ -44,6 +44,7 @@ namespace TwentyOne
                      \______________________________________/
 
 ";
+            bool validAnswer = false;
 
             Console.WriteLine(logo);
 
@@ -57,6 +58,14 @@ namespace TwentyOne
 
             Console.WriteLine("And how much money did you bring today?");
             int bank = Convert.ToInt32(Console.ReadLine());
+
+            //Check the input from the user
+            while (!validAnswer) 
+            {
+                Console.WriteLine("And how much money did you bring today?");
+                validAnswer = int.TryParse(Console.ReadLine(), out bank);
+                if (!validAnswer) Console.WriteLine("Please enter digits only. no decimals.");
+            }
 
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
             string answer = Console.ReadLine().ToLower();
