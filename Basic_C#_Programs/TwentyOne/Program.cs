@@ -1,9 +1,11 @@
 ﻿using System;
+using Casino;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Casino.TwentyOne;
 
 namespace TwentyOne
 {
@@ -62,7 +64,7 @@ namespace TwentyOne
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
                 Player player = new Player(playerName, bank);
-                Game game = new TwentyOne();
+                Game game = new TwentyOneGame();
                 game += player;
                 player.isActivelyPlaying = true;
                 while (player.isActivelyPlaying && player.Balance > 0)
