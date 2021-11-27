@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Contacts";
+}
+
+<h1>Contacts</h1>
+@foreach(var name in Model){
+
+    <h4>@name</h4>
+}
+<p> @ViewBag.Message </p>
