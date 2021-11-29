@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarInsurance;
+using CarInsurance.Models;
 
 namespace CarInsurance.Controllers
 {
@@ -46,16 +47,52 @@ namespace CarInsurance.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType")] Insuree insuree)
         {
-            if (ModelState.IsValid)
+            
+            if (!ModelState.IsValid)
             {
+                return View("~/Views/Shared/Error.cshtml");
+            }
+            else {
+                // Initial quote
+                double quotePrice = 50;
+                var age = DateTime.Now.Year - insuree.DateOfBirth.Value.Year;
+                var carYear = insuree.CarYear.Value;
+
+                if ( age <= 18) 
+                {
+                   quotePrice += 100;
+                }
+                else if ( age <= 25)
+                {
+                    quotePrice += 50;   
+                }
+                else if (age > 25)
+                {
+                    quotePrice += 25;
+                }
+                // if car between 2000 and 2015 add 25
+                if (carYear > 2000 || carYear < 2015) quotePrice += 25;
+                // if car make is porsche
+                if (insuree.CarMake.ToLower() == "porsche") quotePrice += 25;
+                //
+                if (insuree.CarMake.ToLower() == "porsche" && insuree.CarModel.ToLower() == "911 carrera")  quotePrice += 25;
+                // Add $10 for every speeding ticket
+                quotePrice += (insuree.SpeedingTickets.Value * 10);
+                // 25% more for DUi
+                if (insuree.DUI.Value) { quotePrice += (quotePrice * 0.25); }
+               // 505 for full coverage
+                if (insuree.CoverageType.Value) { quotePrice += (quotePrice * 0.50); }
+
+                insuree.Quote = Convert.ToDecimal(quotePrice);
+
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(insuree);
+            //return View(insuree);
         }
 
         // GET: Insuree/Edit/5
@@ -122,6 +159,10 @@ namespace CarInsurance.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+        public int calculateQuote() 
+        {
+            return -1;
         }
     }
 }

@@ -9,7 +9,8 @@ namespace CarInsurance
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/moment.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -20,10 +21,14 @@ namespace CarInsurance
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap-datetimepicker.js",
+                      "~/Scripts/bootstrap-datepicker.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-datetimepicker.css",
+                      "~/Content/bootstrap-datepicker.css",
                       "~/Content/site.css"));
         }
     }

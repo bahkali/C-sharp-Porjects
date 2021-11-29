@@ -1,6 +1,5 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿﻿body {
+    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +20,85 @@ input,
 select,
 textarea {
     max-width: 280px;
+    position: relative;
+}
+.navbar .navbar-brand{
+    color: #ff0000;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.navbar .nav-item > a {
+    color: #333;
+    text-decoration: none;
+}
+.navbar .nav-item > a::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ff0000;
+    transition: all 0.5s ease;
+    transform: scale(0)
+}
+.navbar .nav-item >  a:hover::before{
+    transform: scale(1);
+}
+
+
+.padded {
+    padding: 100px 0;
+}
+
+.section-padded {
+    padding: 50px 0;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.home-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.btn-cta{
+    background-color: #ff0000;
+    padding: 12px 30px;
+    border: 2px solid #ff0000;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.btn-cta a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-cta:hover
+{
+        color: #ff0000;
+        border: 2px solid #ff0000;
+        background-color: #fff;
+        border-radius: 5px;
+}
+
+    .btn-cta:hover a {
+        text-decoration: none;
+        color: #ff0000;
+    }
+
+.feature {
+    background: #f2709c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9472, #f2709c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9472, #f2709c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
 }
