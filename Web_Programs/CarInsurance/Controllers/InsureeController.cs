@@ -56,10 +56,10 @@ namespace CarInsurance.Controllers
             }
             else {
                 // Initial quote
-                double quotePrice = 50;
+                decimal quotePrice = 50m;
                 var age = DateTime.Now.Year - insuree.DateOfBirth.Value.Year;
                 var carYear = insuree.CarYear.Value;
-
+                // quote base on age
                 if ( age <= 18) 
                 {
                    quotePrice += 100;
@@ -76,20 +76,20 @@ namespace CarInsurance.Controllers
                 if (carYear > 2000 || carYear < 2015) quotePrice += 25;
                 // if car make is porsche
                 if (insuree.CarMake.ToLower() == "porsche") quotePrice += 25;
-                //
+                // for porsche model 911 carrera add 25
                 if (insuree.CarMake.ToLower() == "porsche" && insuree.CarModel.ToLower() == "911 carrera")  quotePrice += 25;
                 // Add $10 for every speeding ticket
                 quotePrice += (insuree.SpeedingTickets.Value * 10);
                 // 25% more for DUi
-                if (insuree.DUI.Value) { quotePrice += (quotePrice * 0.25); }
+                if (insuree.DUI.Value) { quotePrice += (quotePrice * 0.25m); }
                // 505 for full coverage
-                if (insuree.CoverageType.Value) { quotePrice += (quotePrice * 0.50); }
+                if (insuree.CoverageType.Value) { quotePrice += (quotePrice * 0.50m); }
 
-                insuree.Quote = Convert.ToDecimal(quotePrice);
+                insuree.Quote = quotePrice;
 
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Admin");
             }
 
             //return View(insuree);
@@ -115,7 +115,7 @@ namespace CarInsurance.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType")] Insuree insuree)
         {
             if (ModelState.IsValid)
             {

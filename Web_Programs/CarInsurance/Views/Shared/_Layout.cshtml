@@ -14,16 +14,14 @@
         <div class="container">
                 <a class="navbar-brand mb-0 h1" href="#">@Html.ActionLink("Car Insurance", "Index", "Home", new { area = "" }, new { @class = "navbar-brand mb-0 h1" })</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
             <div class="navbar-collapse collapse">
                 <div class="mr-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item p-2">@Html.ActionLink("Home", "Index", "Home") <span class="sr-only">(current)</span></li>
-                    <li class="nav-item p-2">@Html.ActionLink("Admin", "Index", "Insuree")</li>
+                    <li class="nav-item p-2">@Html.ActionLink("Admin", "Index", "Admin")</li>
                     <li class="nav-item btn-cta p-2">@Html.ActionLink("Get Quote", "create", "Insuree")</li>
                 </ul>
             </div>
