@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">C# and .NET COURSE</h1>
+</div>
+<div class="container py-5">
+    <section>
+        <h3>Date Time</h3>
+        <p>is an object that is set to the current date and time on the computer.</p>
+        <div class="col-lg-10">
+            <pre>
+            <code>
+                public static void Main()
+                {
+                    DateTime CurrentDate = DateTime.Now;
+                    Console.WriteLine(CurrentDate); // 1/1/2016 1:20:55 AM
+                }
+            </code>
+        </pre>
+        </div>
+    </section>
+    <section>
+        <h3>Event Handler</h3>
+        <p>
+            an event is an action or communication that occurs between objects, such as a mouse click.
+            An event handler is the method that will handle an event,
+            allowing a programmer to write code that is executed when the event occurs.
+        </p>
+        <ol>
+            <li>Define a delegate</li>
+            <li>Define an event based on that delegate</li>
+            <li>Raise the event</li>
+        </ol>
+        <p>Delegates is agreement or contract between publisher and subscriber</p>
+        <div class="col-lg-10">
+            <pre>
+            <code>
+               public deleage void MyEventHandler();
+               public event MyEventHandler myEvent;
+
+               public void RaiseEvent()
+               {
+                  myEvent();
+               }
+          </code>
+        </pre>
+        </div>
+    </section>
+
+    <section>
+        <h3>Handler Methods</h3>
+        <p>
+            Razor Page Handlers or Handler Methods are a way of connecting user requests to our methods. Requests come from the .cshtml file.<br />
+            it follow naming convention that .NET tooling generates
+        </p>
+        <ul>
+            <li>OnGet</li>
+            <li>OnPost</li>
+            <li>etc...</li>
+        </ul>
+        <div class="col-lg-10">
+            <pre>
+            <code>
+              public void OnGet() {}
+
+              public async Task<> OnPost() {}
+            </code>
+        </pre>
+        </div>
+    </section>
+    
+    <section>
+        <h3>Void( C# reference)</h3>
+        <p>
+            is used to specify that the method doesn't return a value
+        </p>
+        <div class="col-lg-10">
+            <pre>
+                <code>
+                public static void Display(int numbers)
+                {
+                     if (numbers is null)
+                     {
+                        return;
+                     }
+
+                     Console.WriteLine(string.Join(" ", numbers));
+                }
+                </code>
+        </pre>
+        </div>
+    </section>
+</div>
