@@ -29,6 +29,9 @@ a {
 html {
   font-size: 14px;
 }
+body {
+    background-color: lightsteelblue;
+}
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -76,3 +79,17 @@ pre code {
     display: block;
     padding: 20px;
 }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
