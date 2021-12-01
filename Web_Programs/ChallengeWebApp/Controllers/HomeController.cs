@@ -18,9 +18,19 @@ namespace ChallengeWebApp.Controllers
             _logger = logger;
         }
 
+        
+
         public IActionResult Index()
         {
+            
             return View();
+        }
+        
+        
+        private void todayTime (object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Now;
+            string todayDate = date.ToString("MM/dd/yyyy HH:mm");
         }
 
         public IActionResult Privacy()

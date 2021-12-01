@@ -1,5 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    ViewData["todayTime"] = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
+   
 }
 
 <div class="text-center">
@@ -7,7 +9,8 @@
 </div>
 <div class="container py-5">
     <section>
-        <h3>Date Time</h3>
+        <h3>Date Time - @ViewData["todayTime"]</h3>
+        
         <p>is an object that is set to the current date and time on the computer.</p>
         <div class="col-lg-10">
             <pre>
