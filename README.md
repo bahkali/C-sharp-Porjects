@@ -1,10 +1,8 @@
 # C# Projects
-<hr>
 
 These are some projects I made using C# and .NET Framework
 
 ## Projects:
-<hr>
 
 - [Car Insurance]()
 - [NewsLetter App]()
