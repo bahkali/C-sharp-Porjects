@@ -1,7 +1,0 @@
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\MathAndComparisonOperations\bin\Debug\MathAndComparisonOperations.exe.config
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\MathAndComparisonOperations\bin\Debug\MathAndComparisonOperations.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\MathAndComparisonOperations\bin\Debug\MathAndComparisonOperations.pdb
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\MathAndComparisonOperations\obj\Debug\MathAndComparisonOperations.csproj.AssemblyReference.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\MathAndComparisonOperations\obj\Debug\MathAndComparisonOperations.csproj.CoreCompileInputs.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\MathAndComparisonOperations\obj\Debug\MathAndComparisonOperations.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\MathAndComparisonOperations\obj\Debug\MathAndComparisonOperations.pdb

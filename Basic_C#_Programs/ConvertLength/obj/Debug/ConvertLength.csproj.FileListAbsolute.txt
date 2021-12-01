@@ -1,7 +1,0 @@
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ConvertLength\bin\Debug\ConvertLength.exe.config
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ConvertLength\bin\Debug\ConvertLength.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ConvertLength\bin\Debug\ConvertLength.pdb
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ConvertLength\obj\Debug\ConvertLength.csproj.AssemblyReference.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ConvertLength\obj\Debug\ConvertLength.csproj.CoreCompileInputs.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ConvertLength\obj\Debug\ConvertLength.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ConvertLength\obj\Debug\ConvertLength.pdb

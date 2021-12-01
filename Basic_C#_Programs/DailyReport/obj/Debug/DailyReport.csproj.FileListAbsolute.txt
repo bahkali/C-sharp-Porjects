@@ -1,6 +1,0 @@
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\DailyReport\bin\Debug\DailyReport.exe.config
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\DailyReport\bin\Debug\DailyReport.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\DailyReport\bin\Debug\DailyReport.pdb
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\DailyReport\obj\Debug\DailyReport.csproj.CoreCompileInputs.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\DailyReport\obj\Debug\DailyReport.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\DailyReport\obj\Debug\DailyReport.pdb

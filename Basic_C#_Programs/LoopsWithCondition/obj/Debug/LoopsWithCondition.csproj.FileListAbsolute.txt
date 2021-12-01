@@ -1,7 +1,0 @@
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\LoopsWithCondition\bin\Debug\LoopsWithCondition.exe.config
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\LoopsWithCondition\bin\Debug\LoopsWithCondition.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\LoopsWithCondition\bin\Debug\LoopsWithCondition.pdb
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\LoopsWithCondition\obj\Debug\LoopsWithCondition.csproj.AssemblyReference.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\LoopsWithCondition\obj\Debug\LoopsWithCondition.csproj.CoreCompileInputs.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\LoopsWithCondition\obj\Debug\LoopsWithCondition.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\LoopsWithCondition\obj\Debug\LoopsWithCondition.pdb

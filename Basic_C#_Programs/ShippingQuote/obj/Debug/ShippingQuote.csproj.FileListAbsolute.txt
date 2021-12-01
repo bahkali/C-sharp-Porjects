@@ -1,7 +1,0 @@
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ShippingQuote\bin\Debug\ShippingQuote.exe.config
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ShippingQuote\bin\Debug\ShippingQuote.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ShippingQuote\bin\Debug\ShippingQuote.pdb
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.csproj.AssemblyReference.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.csproj.CoreCompileInputs.cache
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.exe
-C:\Users\PrecisionM4800\Desktop\C-sharp-Projects-TechAcademy\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.pdb
